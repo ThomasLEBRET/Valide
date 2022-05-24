@@ -1,0 +1,5 @@
+*.DS_STORE
+idDatabase.php
+keys.php
+.htaccess
+.htpasswd

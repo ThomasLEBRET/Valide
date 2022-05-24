@@ -1,0 +1,154 @@
+* {
+    font-family: 'Allerta', arial, Tahoma;
+    box-sizing: border-box;
+}
+
+body {
+    text-align:center;
+    color:#fff;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* Track cards  */
+
+#mobile-box {
+  width: 380px;
+}
+
+.card {
+  padding: 1em;
+  margin: 0.5em;
+
+}
+
+.upper img{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.user{
+position: relative;
+}
+
+.profile img{
+  height: 80px;
+  width: 80px;
+  margin-top:2px;
+}
+
+.profile{
+
+position: absolute;
+top:-50px;
+left: 38%;
+height: 90px;
+width: 90px;
+border:3px solid #fff;
+
+border-radius: 50%;
+
+}
+
+.follow{
+
+border-radius: 15px;
+padding-left: 20px;
+padding-right: 20px;
+height: 35px;
+}
+
+
+/* Audio player */
+
+
+#timeline {
+  width: 90%;
+  height: 2px;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.3); }
+
+#playhead {
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: -3px;
+  background: black;
+  cursor: pointer; }
+
+  .container-audio {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+audio {
+  width:100%;
+}
+
+
+/*  Loader  */
+
+.lds-ripple {
+  display: none;
+  position: fixed; 
+  width: 100px;
+  height: 100px;
+  top: 50%; left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: white;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
